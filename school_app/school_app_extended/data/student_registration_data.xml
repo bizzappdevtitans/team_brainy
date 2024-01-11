@@ -1,0 +1,32 @@
+<odoo noupdate="1">
+  <record model="student.registration" id="register_one">
+    <field name ="name">Tulsi Gosawami</field>
+    <field name="registration_date">2022-07-20</field>
+    <!-- <field name="interview_date">2022-08-01</field> -->
+  </record>
+
+  <record model="student.registration" id="register_two">
+    <field name ="name">Urja Dave</field>
+    <field name="registration_date">2022-07-05</field>
+    <!-- <field name="interview_date">2022-08-01</field> -->
+  </record>
+
+  <record model="student.registration" id="register_three">
+    <field name ="name">Chirag Majethiya</field>
+    <field name="registration_date">2022-06-20</field>
+    <!-- <field name="interview_date">2022-08-01</field> -->
+  </record>
+
+  <record model="student.registration" id="register_four">
+    <field name ="name">Rohan Kachiya</field>
+    <field name="registration_date">2022-07-01</field>
+    <!-- <field name="interview_date">2022-08-01</field> -->
+  </record>
+
+  <record model="student.registration" id="register_five">
+    <field name ="name">Chandan Gosawami</field>
+    <field name="registration_date">2022-01-20</field>
+    <!-- <field name="interview_date">2022-08-01</field> -->
+  </record>
+
+</odoo>

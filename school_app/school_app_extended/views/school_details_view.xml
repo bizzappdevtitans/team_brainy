@@ -1,0 +1,15 @@
+<odoo>
+<record id="view_form_school_details_extend" model="ir.ui.view">
+    <field name="name">School Regestration button</field>
+    <field name="model">school.detail</field>
+    <field name="inherit_id" ref="school_app_original.view_form_school_details"/>
+    <field name="arch" type="xml">
+        <xpath expr="//header" position="inside">
+            <button name="student_registration_form"
+                    string="Registration" type="object"
+                    />
+        </xpath>
+    </field>
+</record>
+</odoo>
+

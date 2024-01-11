@@ -1,0 +1,37 @@
+<odoo noupdate="1">
+  <record model="department.detail" id="dept_new_one">
+    <field name="name">Rahul Vishwas</field>
+    <field name="dept">Language</field>
+    <field name="students">12</field>
+    <field name="dept_no">304</field>
+    <field name="activity">Essay Compitation For Freashers</field>
+    <field name="activity_date">2022-08-01</field>
+  </record>
+
+  <record model="department.detail" id="dept_new_two">
+    <field name="name">Geeta Goswami</field>
+    <field name="dept">Science</field>
+    <field name="students">02</field>
+    <field name="dept_no">305</field>
+    <field name="activity">One day picnic To ISRO,Ahemdabad</field>
+    <field name="activity_date">2022-08-20</field>
+  </record>
+
+  <record model="department.detail" id="dept_new_three">
+    <field name="name">Narendra Modi</field>
+    <field name="dept">Social</field>
+    <field name="students">100</field>
+    <field name="dept_no">306</field>
+    <field name="activity">Debaut For std 12 on Indian Economy</field>
+    <field name="activity_date">2022-10-20</field>
+  </record>
+
+  <record model="department.detail" id="dept_new_four">
+    <field name="name">Amit Aal</field>
+    <field name="dept">Maths</field>
+    <field name="students">69</field>
+    <field name="dept_no">309</field>
+    <field name="activity">Conduct Apptitude test for all</field>
+    <field name="activity_date">2022-07-15</field>
+  </record>
+</odoo>

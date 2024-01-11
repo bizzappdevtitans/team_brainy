@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+school_app_new_feature.access_faculty_schedual,access_faculty_schedual,school_app_new_feature.model_faculty_schedual,base.group_user,1,1,1,1
+school_app_new_feature.access_time_table,access_time_table,school_app_new_feature.model_time_table,base.group_user,1,1,1,1
+school_app_new_feature.access_result_detail,access_result_detail,school_app_new_feature.model_result_detail,base.group_user,1,1,1,1
+school_app_new_feature.access_academic_year,access_academic_year,school_app_new_feature.model_academic_year,base.group_user,1,1,1,1
+school_app_new_feature.access_school_class,access_school_class,school_app_new_feature.model_school_class,base.group_user,1,1,1,1
+school_app_new_feature.access_school_division,access_school_division,school_app_new_feature.model_school_division,base.group_user,1,1,1,1
+school_app_new_feature.access_school_class_division,access_school_class_division,school_app_new_feature.model_school_class_division,base.group_user,1,1,1,1

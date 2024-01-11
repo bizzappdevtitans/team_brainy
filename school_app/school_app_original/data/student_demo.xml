@@ -1,0 +1,68 @@
+<odoo noupdate="1">
+  <record model="student.detail" id="student_new_one">
+    <field name="fname">Shivam</field>
+    <field name="mname">Vanitaben</field>
+    <field name="lname">Goswami</field>
+    <field name="date_of_birth">1932-01-01</field>
+  </record>
+
+  <record model="student.detail" id="student_new_two">
+      <field name="fname" >Amar</field>
+      <field name="mname" >Akbhar</field>
+      <field name="lname" >Enthani</field>
+      <field name="date_of_birth" >1999-09-24</field>
+      <field name="gender">male</field>
+      <field name="roll_number">13</field>
+      <field name="meadium"  >hindi</field>
+      <field name="address" >Ahemdabad</field>
+      <field name="activity">od</field>
+      <field name="act_id">2</field>
+      <field name="phone_number_s" >9078563412</field>
+      <field name="phone_number_p" >1223334466</field>
+      <field name="email" >AAE123@yahoo.com</field>
+      <field name="occupation" >Bank Manager</field>
+      <field name="sports" >tt</field>
+    </record>
+
+    <record model="student.detail" id="student_new_three">
+      <field name="fname" >Neel</field>
+      <field name="mname" >Nitin</field>
+      <field name="lname" >Mukesh</field>
+      <field name="date_of_birth" >2000-12-14</field>
+      <field name="gender">male</field>
+      <field name="roll_number">67</field>
+      <field name="meadium"  >english</field>
+      <field name="address" >Diu,Gujarat</field>
+      <field name="activity">od</field>
+      <field name="act_id">1</field>
+      <field name="phone_number_s" >4556546533</field>
+      <field name="phone_number_p" >9034765599</field>
+      <field name="email" >neelnitin1212@gmail.com</field>
+      <field name="occupation" >Farmer</field>
+      <field name="sports" >ch</field>
+    </record>
+
+    <record model="student.detail" id="student_new_four">
+      <field name="fname" >Rose</field>
+      <field name="mname" >Jack</field>
+      <field name="lname" >Dorrson</field>
+      <field name="date_of_birth" >1987-01-19</field>
+      <field name="gender">female</field>
+      <field name="roll_number">44</field>
+      <field name="meadium"  >gujrati</field>
+      <!-- <field name="standard" >12</field>
+      <field name="division" >c</field> -->
+      <field name="address" >Green Land</field>
+      <field name="activity">id</field>
+      <!-- <field name="e_marks">100</field>
+      <field name="s_marks">89</field>
+      <field name="m_marks">02</field> -->
+      <!-- <field name ="grade">b</field> -->
+      <field name="act_id">3</field>
+      <field name="phone_number_s" >8899004572</field>
+      <field name="phone_number_p" >1212345699</field>
+      <field name="email" >jackbhai1414@gmail.com</field>
+      <field name="occupation" >Captain</field>
+      <field name="sports" >ck</field>
+    </record>
+</odoo>

@@ -1,0 +1,21 @@
+{
+    "name": "School Management Extention",
+    "summary": "Manage School catalog and Student Details",
+    "author": "Tulsi Goswami",
+    "license": "AGPL-3",
+    "version": "15.0.1.0.0",
+    "category": "Services/School",
+    "depends": ["school_app_original", "mail", "contacts"],
+    "application": False,
+    "data": [
+        "security/ir.model.access.csv",
+        "views/teacher_details_view.xml",
+        "views/school_checkout_view.xml",
+        "views/checkout_kanban_view.xml",
+        "views/student_registration_view.xml",
+        "views/school_details_view.xml",
+        "views/school_menu.xml",
+        # "data/student_registration_data.xml",
+        "data/stage_data.xml",
+    ],
+}
