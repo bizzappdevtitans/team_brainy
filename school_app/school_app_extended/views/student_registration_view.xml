@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_list_register_details" model="ir.ui.view">
+        <field name="name">Student.Registation.List</field>
+        <field name="model">student.registration</field>
+        <field name="arch" type="xml">
+            <tree  string="Tags">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="registration_date"/>
+                <field name="interview_date"  readonly="0"/>
+                <field name="preparation_days"/>
+            </tree>
+        </field>
+    </record>
+
+   <record id="view_form_register_details" model="ir.ui.view">
+        <field name="name">Student.Registation.Form</field>
+        <field name="model">student.registration</field>
+        <field name="arch" type="xml">
+            <form>
+                <!--The header tag is built to add buttons within. This puts them at the top -->
+                <header>
+                    <button string="Set to draft" type="object" name="draft_progressbar" attrs="{'invisible': [('state', '=', 'draft')]}"/>
+
+                    <!--The oe_highlight class gives the button a red color when it is saved.
+                    It is usually used to indicate the expected behaviour. -->
+
+                    <button string="Set to started" type="object" name="started_progressbar" class="oe_highlight" attrs="{'invisible': [('state','!=','draft')]}"/>
+
+                    <button string="In progress" type="object" name="progress_progressbar" attrs="{'invisible': [('state','=','progress')]}"/>
+
+                    <button string="Done" type="object" name="done_progressbar" attrs="{'invisible': [('state','=','finished')]}"/>
+                    <!--This will create the statusbar, thanks to the widget. -->
+                    <field name="state" widget="statusbar"/>
+                </header>
+
+                <!-- simple statusbar -->
+                <!-- <header>
+                    <field name="state"
+                           widget="statusbar"
+                           statusbar_visible="draft,in_progress,done"
+                           />
+                </header> -->
+
+                <group>
+                    <sheet>
+                            <group>
+                            <field name="name"/>
+                            <field name="email"/>
+                            <field name="registration_date"/>
+                            <field name="interview_date"/>
+                            <field name="preparation_days"/>
+                        </group>
+                        <group>
+                            <notebook>
+                                    <page name="notes_one" string ="General" >
+                                        <separator string="Basic Details"/>
+                                        <field name="line_id_one">
+                                            <tree editable="bottom" colspan = "3">
+                                                <field name="achivements" />
+                                                <field name="level"/>
+                                                <field name="Win" widget = "boolean_toggle"/>
+                                            </tree>
+                                        </field>
+                                    </page>
+                                    <page name="notes_two" string ="Medical" >
+                                        <field name="line_id_two">
+                                            <tree editable="bottom">
+                                                <field name="any_disability" />
+                                                <field name="description" />
+                                                <field name="doc_name"/>
+                                                <field name="num"/>
+                                            </tree>
+                                        </field>
+                                    </page>
+                                    <page name="notes_three" string ="Contact" >
+                                        <field name="line_id_three">
+                                            <tree editable="bottom">
+                                                <field name="contact_number" />
+                                                <field name="guardian_name"/>
+                                                <field name="relation"/>
+                                            </tree>
+                                        </field>
+                                    </page>
+                                    <page name="notes_four" string ="Academic" >
+                                        <field name="line_id_four">
+                                            <tree editable="bottom">
+                                                <field name="last_school" />
+                                                <field name="academic_year"/>
+                                                <field name="last_std"/>
+                                                <field name="living_certificate"/>
+                                            </tree>
+                                        </field>
+                                    </page>
+                                    <page name="notes_five" string ="Remarks" >
+                                        <field name="line_id_five">
+                                            <tree editable="bottom">
+                                                <field name="remark" />
+                                            </tree>
+                                        </field>
+                                    </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+                </group>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="view_calendar_checkout" model="ir.ui.view">
+        <field name="model">student.registration</field>
+        <field name="arch" type="xml">
+            <calendar date_start="registration_date"
+
+                      color="preparation_days"
+                      string="Notes"
+                      mode="month"
+                      event_limit="5"
+                      hide_time="true"
+                      js_class="project_calendar"
+                      event_open_popup="true"
+                      quick_add="false">
+                <field name="name"/>
+                <field name="preparation_days"/>
+                <field name="interview_date"/>
+            </calendar>
+        </field>
+    </record>
+
+
+</odoo>

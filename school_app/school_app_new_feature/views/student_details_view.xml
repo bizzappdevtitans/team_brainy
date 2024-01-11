@@ -1,0 +1,36 @@
+<odoo>
+    <record id="view_form_student_details_extend" model="ir.ui.view">
+        <field name="name">student registration</field>
+        <field name="model">student.detail</field>
+        <field name="inherit_id" ref="school_app_original.view_form_student_details"/>
+        <field name="arch" type="xml">
+            <xpath expr="//footer" position="inside">
+                <sheet>
+                    <notebook>
+                            <page name="notes_one" string ="Marksheet"  >
+                                <field name="line_ids" decoration-bf="1">
+                                    <tree editable="bottom" col = "4" >
+                                        <field name="test_no"/>
+                                        <field name="test_date"/>
+                                        <field name="test_type" col ="3"/>
+                                        <field name="maths_marks"/>
+                                        <field name="science_marks"/>
+                                        <field name="social_marks"/>
+                                        <field name="english_marks"/>
+                                        <field name="gujarati_marks"/>
+                                        <field name="hindi_marks"/>
+                                        <field name="drawing_marks"/>
+                                        <field name="total_marks"/>
+                                    </tree>
+                                </field>
+                            </page>
+                    </notebook>
+                </sheet>
+            </xpath>
+            <xpath expr="//field[@name='addmission_request_date']" position="after">
+                <field name="class_id" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
+

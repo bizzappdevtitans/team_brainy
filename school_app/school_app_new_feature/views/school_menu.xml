@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_faculty_schedual" model="ir.actions.act_window">
+        <field name="name">Faculty Time Scheduals</field>
+        <field name="res_model">faculty.schedual</field>
+        <field name="view_mode">tree,form,calendar</field>
+    </record >
+
+    <record id="action_result_details" model="ir.actions.act_window">
+        <field name="name">Result Details</field>
+        <field name="res_model">result.detail</field>
+        <field name="view_mode">graph</field>
+    </record>
+
+    <record id="action_academic_year" model="ir.actions.act_window">
+        <field name="name">Academic Year</field>
+        <field name="res_model">academic.year</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <record id="action_school_class_division" model="ir.actions.act_window">
+        <field name="name">Class Division</field>
+        <field name="res_model">school.class.division</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem
+        id="result_graph"
+        name="Result Analysis"
+        parent="school_app_original.student_menu"
+        action="action_result_details"
+     />
+
+    <menuitem
+        id="faculty_schedual"
+        name="Faculty Scheduals"
+        parent="school_app_original.teacher_menu"
+        action="action_faculty_schedual"
+     />
+
+    <menuitem
+        id="academic_year"
+        name="Academic Year"
+        action="action_academic_year"
+        parent="school_app_original.school_details_menu"
+    />
+
+    <menuitem
+        id="class_division"
+        name = "Class Division"
+        action="action_school_class_division"
+        parent="school_app_original.school_details_menu"
+    />
+
+
+</odoo>

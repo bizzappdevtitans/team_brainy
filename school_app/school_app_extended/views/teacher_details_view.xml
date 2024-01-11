@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_form_book_extend" model="ir.ui.view">
+        <field name="name">Teacher Manager</field>
+        <field name="model">teacher.detail</field>
+        <field name="inherit_id" ref="school_app_original.view_form_teacher_details"/>
+        <field name="arch" type="xml">
+            <!-- <field name="name" position="after">
+                <field name="is_manager" />
+            </field> -->
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="is_manager" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

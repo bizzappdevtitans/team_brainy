@@ -1,0 +1,36 @@
+<odoo noupdate="1">
+  <record model="teacher.detail" id="teacher_new_one">
+    <field name ="name">Rutvi</field>
+    <field name="short_name">Ruh</field>
+    <field name ="email">rrr@gmail.com</field>
+    <field name ="sub">pic</field>
+  </record>
+
+  <record model="teacher.detail" id="teacher_new_two">
+    <field name ="name">Isha</field>
+    <field name="short_name">Ish</field>
+    <field name ="email">ish123@gmail.com</field>
+    <field name ="sub">hindi</field>
+  </record>
+
+  <record model="teacher.detail" id="teacher_new_three">
+    <field name ="name">Himani</field>
+    <field name="short_name">Hims</field>
+    <field name ="email">hims23@gmail.com</field>
+    <field name ="sub">pt</field>
+  </record>
+
+  <record model="teacher.detail" id="teacher_new_four">
+    <field name ="name">Ankit</field>
+    <field name="short_name">A</field>
+    <field name ="email">freeman289999@yahoo.com</field>
+    <field name ="sub">admin</field>
+  </record>
+
+  <record model="teacher.detail" id="teacher_new_five">
+    <field name ="name">Gaurav</field>
+    <field name="short_name">GG</field>
+    <field name ="email">g007@gmail.com</field>
+    <field name ="sub">maths</field>
+  </record>
+</odoo>

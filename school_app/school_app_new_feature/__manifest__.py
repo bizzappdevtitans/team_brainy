@@ -1,0 +1,21 @@
+{
+    "name": "School Management New Extention",
+    "summary": "Manage School New Featurs [INSTALL THIS]",
+    "author": "Tulsi Goswami",
+    "license": "AGPL-3",
+    "version": "15.0.1.0.0",
+    "category": "Services/School",
+    "depends": ["school_app_extended"],
+    "application": False,
+    "data": [
+        "security/ir.model.access.csv",
+        "data/sequence.xml",
+        "views/views_res_config_settings.xml",
+        "views/faculty_schedual_view.xml",
+        "views/student_details_view.xml",
+        "views/result_view.xml",
+        "views/academic_year_view.xml",
+        "views/class_division_view.xml",
+        "views/school_menu.xml",
+    ],
+}

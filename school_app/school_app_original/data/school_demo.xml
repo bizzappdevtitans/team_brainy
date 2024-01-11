@@ -1,0 +1,13 @@
+<odoo noupdate="1">
+  <record model="school.detail" id="school_new">
+    <field name="name">BizzAppDev Institute</field>
+    <field name="address">The Capital,Science City Road,Sola</field>
+    <field name="school_id">0089</field>
+    <field name="school_web">https://bizzappdev.com</field>
+    <field name="phone_number">9099020687</field>
+    <field name="meadium">english</field>
+    <field name="level">higsecondary</field>
+    <field name="rating">4</field>
+    <field name="fee">10000</field>
+      </record>
+</odoo>

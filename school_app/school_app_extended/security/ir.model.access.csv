@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+school_app_extended.access_school_addmission_stage,access_school_addmission_stage,school_app_extended.model_school_addmission_stage,base.group_user,1,1,1,1
+school_app_extended.access_school_checkout,access_school_checkout,school_app_extended.model_school_checkout,base.group_user,1,1,1,1
+school_app_extended.access_student_registration,access_student_registration,school_app_extended.model_student_registration,base.group_user,1,1,1,1
+school_app_extended.access_general_detail,access_general_detail,school_app_extended.model_general_detail,base.group_user,1,1,1,1
+school_app_extended.access_medical_detail,access_medical_detail,school_app_extended.model_medical_detail,base.group_user,1,1,1,1
+school_app_extended.access_contact_detail,access_contact_detail,school_app_extended.model_contact_detail,base.group_user,1,1,1,1
+school_app_extended.access_remark_detail,access_remark_detail,school_app_extended.model_remark_detail,base.group_user,1,1,1,1
+school_app_extended.access_academic_detail,access_academic_detail,school_app_extended.model_academic_detail,base.group_user,1,1,1,1

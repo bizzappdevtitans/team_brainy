@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_tree_school_details" model="ir.ui.view">
+        <field name="name">School.List</field>
+        <field name="model">school.detail</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="school_id"/>
+                <field name="meadium"/>
+                <field name="phone_number"/>
+                <field name="rating" widget="priority"/>
+                <field name="sports" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_search_school_details" model="ir.ui.view">
+        <field name="name">School.Filters</field>
+        <field name="model">school.detail</field>
+        <field name="arch" type="xml">
+
+        <search>
+            <field name="school_id"/>
+            <filter name="filter_inactive"
+                    string="Inactive"
+                    domain="[('sports','=',True)]"/>
+            <filter name="filter_active"
+                    string="Active"
+                    domain="[('sports','=',False)]"/>
+        </search>
+        </field>
+    </record>
+
+    <record id="view_form_school_details" model="ir.ui.view">
+        <field name="name">School.Details.Form</field>
+        <field name="model">school.detail</field>
+        <field name="arch" type="xml">
+            <form>
+                <widget name="web_ribbon" text="OPEN" bg_color="bg-success" />
+                <header>
+                    <div>
+
+                    </div>
+
+                </header>
+
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="name" />
+                            <field name="school_id"/>
+                            <field name="principal" />
+                            <field name="image" widget="image" />
+                            <field name="address" />
+                        </group>
+                        <group name="group_right">
+                            <field name="phone_number" />
+                            <field name="meadium" widget="badge" />
+                            <field name="level" />
+                            <field name="sports" />
+                            <field name="rating" />
+                            <field name="fee" widget="monetary"/>
+                            <field name="school_web" widget="website_urls"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="teachers" widget="many2many_tags" options="{'color_field': 'color'}" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
+
+
+
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_form_teacher_details" model="ir.ui.view">
+        <field name="name">Teacher.Details.Form</field>
+        <field name="model">teacher.detail</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="short_name"/>
+                        <field name="sub"/>
+                        <field name="email" widget="email"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_activity_teacher_details" model="ir.ui.view">
+        <field name="name">Teacher.Details.Activity</field>
+        <field name="model">teacher.detail</field>
+        <field name="arch" type="xml">
+            <activity string="Checkouts">
+                <templates>
+                    <div t-name="activity-box">
+                        <div>
+                            <field name="name" />
+                        </div>
+                    </div>
+                </templates>
+            </activity>
+        </field>
+    </record>
+
+    <record id="view_tree_school_details" model="ir.ui.view">
+        <field name="name">Teacher.List</field>
+        <field name="model">teacher.detail</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="sub"/>
+                <field name="email" widget="email"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
+

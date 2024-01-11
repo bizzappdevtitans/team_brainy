@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_addmission_stage" model="ir.actions.act_window">
+        <field name="name">Addmission Process</field>
+        <field name="res_model">school.addmission.stage</field>
+        <field name="view_mode">tree,form</field>
+    </record >
+
+    <record id="action_checkout" model="ir.actions.act_window">
+        <field name="name">Checkout</field>
+        <field name="res_model">school.checkout</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+     <record id="action_registration" model="ir.actions.act_window">
+        <field name="name">Registration</field>
+        <field name="res_model">student.registration</field>
+        <field name="view_mode">tree,form,calendar</field>
+    </record>
+
+    <menuitem
+        id="addmission_stages"
+        name="Addmission Process"
+        parent="school_app_original.school_menu"
+        action="action_addmission_stage"
+     />
+
+    <menuitem
+        id="checkout_menu"
+        name="Checkout"
+        parent="addmission_stages"
+        action="action_checkout"
+     />
+
+     <menuitem
+        id="student_registration_menu"
+        name="Registration"
+        parent="addmission_stages"
+        action="action_registration"
+     />
+
+</odoo>
+
+
+
+
+
+

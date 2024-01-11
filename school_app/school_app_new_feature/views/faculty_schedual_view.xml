@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_form_faculty_schedual" model="ir.ui.view">
+        <field name="name">Faculty.Schedual.Form</field>
+        <field name="model">faculty.schedual</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group name="group_left">
+                            <field name="faculty_name" />
+                            <field name="default_email"/>
+                    </group>
+
+                    <group name="group_right">
+                            <field name="department"/>
+                    </group>
+
+
+                        <notebook>
+                            <page name="notes_one" string ="Time Scheduals" >
+                                <field name="line_ids">
+                                    <tree editable="bottom" colspan = "3">
+                                        <field name="weekdays" />
+                                        <field name="sub" />
+                                        <field name="class_name" />
+                                        <field name="div" />
+                                        <field name="start_time"  widget="float_time"/>
+                                        <field name="end_time" widget="float_time" />
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    <group>
+                        <field name = "notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_list_faculty_schedual" model="ir.ui.view">
+        <field name="name">Faculty.Schedual.list</field>
+        <field name="model">faculty.schedual</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="faculty_name" />
+                <field name="department"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_calendar_faculty" model="ir.ui.view">
+        <field name="model">faculty.schedual</field>
+        <field name="arch" type="xml">
+            <calendar date_start="date"
+                      color="faculty_name"
+                      string="details"
+                      mode="month"
+                      event_limit="5"
+                      hide_time="true"
+                      js_class="project_calendar"
+                      event_open_popup="true"
+                      quick_add="false">
+                <field name="faculty_name" />
+            </calendar>
+        </field>
+    </record>
+
+</odoo>
